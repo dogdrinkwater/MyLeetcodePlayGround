@@ -36,8 +36,11 @@ public class TwoSum {
      * 数组
      * 哈希表
      * */
+    public static void main(String[] args) {
+        execute(new int[]{1,3,5}, 8);
+    }
 
-    public int[] execute(int[] nums, int target) {
+    public static int[] execute(int[] nums, int target) {
         Map<Integer, Integer> hashTable = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             if (hashTable.containsKey(target-nums[i])) {
